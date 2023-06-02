@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Sverdlovsk';
+    src: url('/fonts/sverdlovsk.woff2') format('otf'),
+        url('/fonts/sverdlovsk.woff') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
