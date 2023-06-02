@@ -9,7 +9,7 @@ type Props = {}
 export default function School({}: Props) {
   return (
     <div className='py-12'>
-      <h2 className='deep-gold-color text-3xl py-5 md:text-4xl text-center tracking-widest'>Обучение в школе</h2>
+      <h2 className='deep-gold-color text-3xl py-5 md:text-4xl lg:text-5xl text-center tracking-widest'>Обучение в школе</h2>
       <div className='flex flex-col justify-center items-center md:flex-row'>
         <div className=''>
 
