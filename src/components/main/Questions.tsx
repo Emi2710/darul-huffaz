@@ -1,8 +1,7 @@
 import React from 'react'
-import Faq from "react-faq-component"
+import Faq from 'react-faq-component'
 
-
-interface PropTypes {
+interface Props {
     data: {
         title: string,
         rows: [{

@@ -9,7 +9,7 @@ type Props = {}
 export default function Footer({}: Props) {
   return (
     <div className='py-16 border-top mt-32 px-5'>
-        <div className='flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:items-start tracking-widest'>
+        <div className='flex flex-col lg:flex-row justify-around items-center lg:items-start tracking-widest'>
             <div>
                 <Image src={logo} alt="Darul Huffaz Logo" className='width-100 lg:hidden' />
             </div>
@@ -29,7 +29,7 @@ export default function Footer({}: Props) {
             <div>
                 <Image src={logo} alt="Darul Huffaz Logo" className='width-100 hidden lg:block mt-16' />
             </div>
-            <div>
+            <div className=''>
                 <h4 className='text-2xl mb-5 mt-16'>Мы в соцсетях</h4>
                 <ul>
                     <Link href="https://instagram.com/darul_huffaz95?igshid=YmMyMTA2M2Y="><li>Instagram школы</li></Link> 
