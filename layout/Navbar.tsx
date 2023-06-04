@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react'
-import logo from '../../../assets/logo.svg';
-import hamburger from '../../../assets/hamburger.svg';
+import logo from '../assets/logo.svg';
+import hamburger from '../assets/hamburger.svg';
 
 type Props = {}
 

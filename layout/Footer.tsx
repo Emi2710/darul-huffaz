@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import logo from '../../../assets/footer-logo.svg'
+import logo from '../assets/footer-logo.svg'
 
 type Props = {}
 

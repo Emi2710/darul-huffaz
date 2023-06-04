@@ -4,7 +4,7 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 
-type Props = {children}
+type Props = any
 
 export default function Layout({children}: Props) {
 

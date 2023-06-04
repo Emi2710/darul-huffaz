@@ -1,5 +1,5 @@
-import Layout from '@/components/layout/Layout'
-import Navbar from '@/components/layout/Navbar'
+import Layout from '../../layout/Layout'
+import Navbar from '../../layout/Navbar'
 import Header from '@/components/main/Header'
 import About from '@/components/main/About'
 import School from '@/components/main/School'
