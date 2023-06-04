@@ -12,14 +12,14 @@ export default function Inspiration({}: Props) {
   
   return (
     <div>
-      <div className='flex p-3 mt-24'>
-        <div className=''>
+      <div className='flex p-3 mt-24 justify-content items-center'>
+      <div className='max-w-md m-auto'>
 
           <Image src={inspiration} alt="Нет ограничений в возрасте для заучивания Корана и нет предела и конца для его изучения." className='width-80 pr-3' />
 
       </div>
 
-      <div className="">
+      <div className="hidden lg:block max-w-sm m-auto">
           <video
             ref={vidRef}
             src='./video/video2.mp4'
