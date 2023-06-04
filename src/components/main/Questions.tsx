@@ -1,5 +1,5 @@
 import React from 'react'
-import Faq from 'react-faq-component'
+import Faq, {FAQData, FAQProps} from 'react-faq-component'
 
 interface Props {
     data: {
@@ -13,8 +13,7 @@ interface Props {
     
 }
 
-const data = {
-    rows: [
+const data: FAQData[] = [
         {
             title: "Проходят ли дети школьные предметы?",
             content: "Нет, у нас только заучивание Корана и таджвид.",
@@ -67,8 +66,7 @@ const data = {
             title: "Сколько стоит обучение онлайн?",
             content: "3000 рублей в месяц - групповые занятия.\n6000 рублей в месяц - индивидуальные занятия.",
         },
-    ],
-};
+    ];
 
 const styles = {
     bgColor: 'transparent',
