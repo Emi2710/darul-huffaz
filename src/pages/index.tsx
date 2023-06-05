@@ -14,6 +14,8 @@ import Questions from '@/components/main/Questions'
 import Contact from '@/components/main/Contact'
 
 import Faq, {FAQData, FAQProps} from 'react-faq-component'
+import Navbar from '../../layout/Navbar'
+import Footer from '../../layout/Footer'
 
 interface Props {
     data: {
@@ -99,8 +101,8 @@ const styles = {
 
 export default function Home({}: Props) {
   return (
-    <Layout>
-
+    <div>
+    <Navbar />
       <Header />
       <About />
       <School />
@@ -125,6 +127,8 @@ export default function Home({}: Props) {
       
       <Contact />
 
-    </Layout>
+      <Footer />
+
+    </div>
   )
 }

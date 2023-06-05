@@ -229,6 +229,10 @@ hr {
     color: #fff;
 }
 
+.query-hide:hover {
+    cursor:pointer;
+}
+
 @media screen and (min-width: 2000px) {
     .app__gallery-content button {
         margin-top: 2rem;
@@ -242,6 +246,12 @@ hr {
     .app__gallery-images_card {
         min-width: 400px;
         height: 547px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .query-hide {
+        display: none;
     }
 }
 
@@ -259,6 +269,12 @@ hr {
 @media screen and (max-width: 850px) {
     .app__gallery {
         padding: 4rem 0 4rem 4rem;
+    }
+
+    .query-hide {
+        position:absolute;
+        right: 0;
+        padding: 0 15px;
     }
 }
 
@@ -302,3 +318,21 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, 0.35);
 }
 
+/*NAVBAR*/
+.mobile-nav_links {
+    background-color: #FDDA8B;
+    padding: 15px;
+    margin-top: 15px;;
+}
+
+.mobile-nav_links ul li {
+    padding: 10px 0;
+}
+
+.mobile-nav_links ul li:hover{
+    text-decoration: underline;
+}
+
+.desktop-nav_links li {
+    padding: 0 15px;
+}
