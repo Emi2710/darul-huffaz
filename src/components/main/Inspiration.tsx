@@ -22,9 +22,10 @@ export default function Inspiration({}: Props) {
       <div className="hidden lg:block max-w-sm m-auto">
           <video
             ref={vidRef}
-            src='./video/video2.mp4'
-            controls={true}
-            className="width-80"
+            src='./video/video2.MP4'
+            loop
+            controls={false}
+            muted
           />
           <div className="">
             <div
