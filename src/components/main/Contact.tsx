@@ -8,7 +8,7 @@ type Props = {}
 
 export default function Contact({}: Props) {
   return (
-    <div className='p-5 mt-12'>
+    <div className='p-5 mt-12 mb-20'>
         <h2 className='text-3xl py-5 md:text-4xl tracking-widest text-center'>контактная информация</h2>
       <div className='md:flex justify-center items-center'>
         <div className='tracking-widest'>

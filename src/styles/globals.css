@@ -253,6 +253,11 @@ hr {
     .query-hide {
         display: none;
     }
+
+    .desktop-footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -315,7 +320,7 @@ hr {
 }
 
 .border-top {
-    border-top: 1px solid rgba(0, 0, 0, 0.35);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /*NAVBAR*/

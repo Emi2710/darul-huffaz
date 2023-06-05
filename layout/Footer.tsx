@@ -8,13 +8,12 @@ type Props = {}
 
 export default function Footer({}: Props) {
   return (
-    <div className='py-16 border-top mt-32 px-5'>
-        <div className='flex flex-col lg:flex-row justify-around items-center lg:items-start tracking-widest'>
-            <div>
-                <Image src={logo} alt="Darul Huffaz Logo" className='width-100 lg:hidden' />
-            </div>
-            <div className=''>
-                <h4 className='text-2xl mb-5 mt-16'>Информация</h4>
+    <div className='border-top tracking-widest'>
+        <div className='flex flex-col justify-center p-5 desktop-footer'>
+            
+
+            <div className='py-5'>
+                <h4 className='text-2xl pb-5'>Информация</h4>
                 <ul>
                     <Link href='/online'><li>Онлайн обучение </li></Link>
                     <Link href='/about-teachers'><li>Преподавательский состав </li></Link>
@@ -26,11 +25,13 @@ export default function Footer({}: Props) {
                     <Link href='/feedback'><li>Отзывы</li></Link>
                 </ul>
             </div>
-            <div>
-                <Image src={logo} alt="Darul Huffaz Logo" className='width-100 hidden lg:block mt-16' />
+
+            <div className='hidden lg:block'>
+                <Image src={logo} alt="Darul Huffaz Logo" className='width-100 lg:hidden py-5 max-w-sm' />
             </div>
-            <div className=''>
-                <h4 className='text-2xl mb-5 mt-16'>Мы в соцсетях</h4>
+
+            <div className='py-5'>
+                <h4 className='text-2xl pb-5'>Мы в соцсетях</h4>
                 <ul>
                     <Link href="https://instagram.com/darul_huffaz95?igshid=YmMyMTA2M2Y="><li>Instagram школы</li></Link> 
                     <Link href="https://instagram.com/darulhuffaz_online?igshid=YmMyMTA2M2Y="><li>Instagram онлайн школы</li></Link> 
@@ -40,10 +41,12 @@ export default function Footer({}: Props) {
                 </ul>
 
             </div>
-        </div>
 
-        <p className='roboto opacity-80 text-center py-12'>2023 Darul Huffaz. All Rights reserved.</p>
-        
+        </div>
+        <p className='roboto opacity-80 text-center pt-12'>2023 Darul Huffaz. All Rights reserved.</p>
+        <div className='p-5 query-hide'>
+                <Image width={350} src={logo} alt="Darul Huffaz Logo" className='lg:hidden py-5' />
+        </div>
     </div>
   )
 }
