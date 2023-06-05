@@ -44,9 +44,7 @@ export default function Footer({}: Props) {
 
         </div>
         <p className='roboto opacity-80 text-center pt-12'>2023 Darul Huffaz. All Rights reserved.</p>
-        <div className='p-5 query-hide'>
-                <Image width={350} src={logo} alt="Darul Huffaz Logo" className='lg:hidden py-5' />
-        </div>
+        
     </div>
   )
 }

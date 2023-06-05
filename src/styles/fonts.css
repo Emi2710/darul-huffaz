@@ -2,6 +2,7 @@
     font-family: 'Sverdlovsk';
     src: url('/fonts/Sverdlovsk.woff2') format('otf'),
          url('/fonts/Sverdlovsk.woff') format('otf'),
+        url('/fonts/Sverdlovsk.otf') format('otf'),
          url('https://darul-huffaz.vercel.app/fonts/Sverdlovsk.woff') format('otf');
     font-weight: normal;
     font-style: normal;
