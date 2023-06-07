@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 @import 'fonts.css';
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Playfair:ital,wght@0,400;1,600&family=Roboto:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,400;1,600&family=Roboto:ital@0;1&family=Rubik:wght@600&display=swap');
+
 body {
     background-color: #FEFAE0;
     font-family: 'Sverdlovsk', sans-serif;
+}
+
+.rubik-font {
+    font-family: 'Rubik',
+    sans-serif;
 }
 
 * {
@@ -320,6 +327,10 @@ hr {
 
 .border-top {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /*NAVBAR*/
