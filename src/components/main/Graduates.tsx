@@ -45,7 +45,7 @@ const Graduates: React.FC<Props> = () => {
         </div>
       </div>
       <div>
-        <p className='text-center md:text-2xl lg:text-4xl lg:py-12 tracking-widest p-1'>За 5 лет работы, с дозволения Аллах1а, <br/>
+        <p className='text-center text-lg md:text-2xl lg:text-4xl lg:py-12 tracking-widest p-1'>За 5 лет работы, с дозволения Аллах1а, <br/>
           наша школы выпустила более <span className='quote-span'>60 Хафизов</span></p>
       </div>
     </div>
