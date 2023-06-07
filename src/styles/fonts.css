@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Sverdlovsk';
-    src: url('/fonts/Sverdlovsk.woff2') format('otf'),
+    src: url('/fonts/Sverdlovsk.otf') format('opentype'),
+         url('/fonts/Sverdlovsk.woff2') format('otf'),
          url('/fonts/Sverdlovsk.woff') format('otf'),
-        url('/fonts/Sverdlovsk.otf') format('otf'),
-         url('https://darul-huffaz.vercel.app/fonts/Sverdlovsk.woff') format('otf');
+         url('https://darul-huffaz.vercel.app/fonts/Sverdlovsk.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
