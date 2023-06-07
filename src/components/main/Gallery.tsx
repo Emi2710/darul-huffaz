@@ -28,7 +28,6 @@ const Gallery: React.FC<Props> = () => {
     <div className='lg:flex justify-around lg:my-12'>
       <div className='text-3xl md:text-4xl p-5 mt-12'>
         <h3 className='tracking-widest'>галерея школы</h3>
-        <p className='roboto opacity-70 text-sm py-5 max-w-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
         <Link href="https://instagram.com/darul_huffaz95"><button className='pink-bg py-1 px-5 tracking-widest text-sm my-3'>Instagram</button></Link>
       </div>
       <div className="app__gallery-images">
