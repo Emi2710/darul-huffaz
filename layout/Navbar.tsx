@@ -19,11 +19,14 @@ export default function Navbar({}: Props) {
     <div className='py-5 lg:flex items-center'>
             <div className='flex items-center'>
                 <div className=''>
-                    <Image
-                        src={logo}
-                        alt='Логотип Школа Хафизов Для Сестёр'
-                        width={200}
-                    />
+                    <Link href="/">
+                        <Image
+                            src={logo}
+                            alt='Логотип Школа Хафизов Для Сестёр'
+                            width={200}
+                        />    
+                    </Link>
+                    
                 </div> 
 
                 <div className='query-hide' onClick={openMenu}>
@@ -43,10 +46,10 @@ export default function Navbar({}: Props) {
         <div className='items-center justify-center w-100 m-auto text-lg hidden lg:block'>
 
             <ul className='flex w-100 m-auto desktop-nav_links tracking-widest'>
-                    <Link href="/main"><li className=''>Главное</li></Link>
-                    <Link href="/about-school"><li className=''>О школе</li></Link>
-                    <Link href="/teachers"><li className=''>Преподавательский состав</li></Link>
-                    <Link href="/online"><li className=''>Онлайн обучение</li></Link>
+                    <Link href="/"><li className=''>Главное</li></Link>
+                    <Link href="/o-shkole"><li className=''>О школе</li></Link>
+                    <Link href="/prepodavatelskii-sostav"><li className=''>Преподавательский состав</li></Link>
+                    <Link href="/online-obuchenie"><li className=''>Онлайн обучение</li></Link>
             </ul>
             
             

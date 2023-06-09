@@ -351,3 +351,17 @@ hr {
 .desktop-nav_links li {
     padding: 0 15px;
 }
+
+
+/*PORTABLE TEXT*/
+
+.portable-text p {
+    opacity: 80%;
+    font-family: 'Playfair',
+    serif;
+}
+
+.portable-text img {
+    width: 100%;
+    padding: 25px 0px;
+}

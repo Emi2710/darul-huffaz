@@ -8,7 +8,7 @@ type Props = {}
 
 export default function Footer({}: Props) {
   return (
-    <div className='border-top tracking-widest'>
+    <div className='border-top tracking-widest mt-12'>
         <div className='flex flex-col justify-center p-5 desktop-footer'>
             
 
@@ -16,7 +16,7 @@ export default function Footer({}: Props) {
                 <h4 className='text-2xl pb-5'>Информация</h4>
                 <ul>
                     <Link href='/online'><li>Онлайн обучение </li></Link>
-                    <Link href='/about-teachers'><li>Преподавательский состав </li></Link>
+                    <Link href='/teachers'><li>Преподавательский состав </li></Link>
                     <Link href='/job-openings'><li>Вакансии</li></Link>
                     <Link href='/references'><li>СМИ </li></Link>
                     <Link href='/graduates'><li>Наши выпускницы</li></Link>

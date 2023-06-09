@@ -1,13 +1,47 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import Image from 'next/image';
 
-import { images } from '../../../assets/constants';
 import Link from 'next/link';
 
-interface Props {}
+import {sanityClient, urlFor} from '../../../lib/sanity'
+
+
+interface Props {}  
+
+interface Image {
+  _id: string;
+  image: {
+    asset: {
+      url: string;
+    };
+  };
+  alt: string;
+}
+
+
 
 const Gallery: React.FC<Props> = () => {
+
+  const [images, setImages] = useState<Image[]>([]);
+
+  useEffect(() => {
+    // Fetch the data from Sanity using a GROQ query
+    const fetchData = async () => {
+      try {
+        const query = '*[_type == "schoolGallery"]{images[]->{image{asset->{url}}, alt}}';
+        const result = await sanityClient.fetch(query);
+        setImages(result[0].images);
+      } catch (error) {
+        console.error('Error fetching data from Sanity:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+
+
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: 'left' | 'right') => {
@@ -32,12 +66,13 @@ const Gallery: React.FC<Props> = () => {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.img1, images.img2, images.img3].map((image, index) => (
+          {/*images.map((image, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-              <Image src={image} alt="gallery_image" />
+              
+              <Image src={image.image.asset.url} alt={image.alt} />
               
             </div>
-          ))}
+          ))*/}
         </div>
         <div className="app__gallery-images_arrows">
           <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll('left')} />
@@ -47,5 +82,7 @@ const Gallery: React.FC<Props> = () => {
     </div>
   );
 };
+
+
 
 export default Gallery;
