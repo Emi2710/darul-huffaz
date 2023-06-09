@@ -16,7 +16,7 @@ export default function Footer({}: Props) {
                 <h4 className='text-2xl pb-5'>Информация</h4>
                 <ul>
                     <Link href='/online-obuchenie'><li>Онлайн обучение </li></Link>
-                    <Link href='/prepodavtelskii-sostav'><li>Преподавательский состав </li></Link>
+                    <Link href='/prepodavatelskii-sostav'><li>Преподавательский состав </li></Link>
                     <Link href='/vakansii'><li>Вакансии</li></Link>
                     <Link href='/smi'><li>СМИ </li></Link>
                     <Link href='/#vypusknici'><li>Наши выпускницы</li></Link>
