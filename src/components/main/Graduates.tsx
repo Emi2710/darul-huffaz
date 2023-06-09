@@ -2,10 +2,11 @@ import React, { useRef } from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import Image from 'next/image';
 
-import { images } from '../../../assets/constants';
+import { graduates, graduatesData } from '../../../assets/constants';
 import Link from 'next/link';
 
 interface Props {}
+
 
 const Graduates: React.FC<Props> = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -29,12 +30,14 @@ const Graduates: React.FC<Props> = () => {
 
       <h3 className='text-3xl pt-12 lg:py-12 lg:pt-24 md:text-4xl lg:text-5xl tracking-widest text-center'>Наши выпускницы </h3>
         
+      
+      
       <div className="app__gallery-images flex m-auto">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.img1, images.img2, images.img3].map((image, index) => (
+          {graduatesData.graduatesData.map((graduate, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-              <Image src={image} alt="gallery_image" />
-              <p className='p-3 absolute bottom-0 graduate-caption tracking-widest text-xs lg:text-sm'>Сайдал-Алиева Марха стала Хафизой <br/> за 2 года.<br/> 13.03.2023</p>
+              <Image src={graduate.imgUrl} alt="gallery_image" />
+              <p className='p-3 absolute bottom-0 graduate-caption tracking-widest text-xs lg:text-sm'>{graduate.name} <br/>{graduate.time}<br/> {graduate.date}</p>
             </div>
           ))}
         </div>
