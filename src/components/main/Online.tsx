@@ -22,7 +22,7 @@ export default function Online({}: Props) {
         Наша школа даёт возможность каждому выучить таджвид из любой точки мира, даже не выходя из дома! Онлайн школа предоставляет уникальную изучать таджвид удаленно. Используйте своё время с пользой!
         </p>
         
-        <Link href="/online"><button className='pink-bg py-1 px-5 text-sm my-3 tracking-widest md:text-lg'>Узнать подробнее</button></Link>
+        <Link href="/online-obuchenie"><button className='pink-bg py-1 px-5 text-sm my-3 tracking-widest md:text-lg'>Узнать подробнее</button></Link>
       </div>
 
       <div>
