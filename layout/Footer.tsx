@@ -15,14 +15,14 @@ export default function Footer({}: Props) {
             <div className='py-5'>
                 <h4 className='text-2xl pb-5'>Информация</h4>
                 <ul>
-                    <Link href='/online'><li>Онлайн обучение </li></Link>
-                    <Link href='/teachers'><li>Преподавательский состав </li></Link>
-                    <Link href='/job-openings'><li>Вакансии</li></Link>
-                    <Link href='/references'><li>СМИ </li></Link>
-                    <Link href='/graduates'><li>Наши выпускницы</li></Link>
-                    <Link href='/anouncements'><li>Объявления </li></Link>
-                    <Link href='/summer-school'><li>Летнее обучение для детей</li></Link>
-                    <Link href='/feedback'><li>Отзывы</li></Link>
+                    <Link href='/online-obuchenie'><li>Онлайн обучение </li></Link>
+                    <Link href='/prepodavtelskii-sostav'><li>Преподавательский состав </li></Link>
+                    <Link href='/vakansii'><li>Вакансии</li></Link>
+                    <Link href='/smi'><li>СМИ </li></Link>
+                    <Link href='/#vypusknici'><li>Наши выпускницы</li></Link>
+                    <Link href='/obyavleniya'><li>Объявления </li></Link>
+                    <Link href='/letnee-obuchenie-dlya-detei'><li>Летнее обучение для детей</li></Link>
+                    <Link href='/otzivi'><li>Отзывы</li></Link>
                 </ul>
             </div>
 

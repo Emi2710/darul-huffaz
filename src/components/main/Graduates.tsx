@@ -25,7 +25,7 @@ const Graduates: React.FC<Props> = () => {
   };
 
   return (
-    <div className=''>
+    <div className='' id='vypusknici'>
 
       <h3 className='text-3xl pt-12 lg:py-12 lg:pt-24 md:text-4xl lg:text-5xl tracking-widest text-center'>Наши выпускницы </h3>
         
