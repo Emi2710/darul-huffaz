@@ -59,10 +59,10 @@ export default function Navbar({}: Props) {
         {showMenu && 
             <div className='mobile-nav_links'>
                 <ul className=''>
-                        <Link href="/main"><li className='py-3 hover:underline'>Главное</li></Link>
-                        <Link href="/about-school"><li className='py-3 hover:underline'>О школе</li></Link>
-                        <Link href="/teachers"><li className='py-3 hover:underline'>Преподавательский состав</li></Link>
-                        <Link href="/online"><li className='py-3 hover:underline'>Онлайн обучение</li></Link>
+                        <Link href="/"><li className='py-3 hover:underline'>Главное</li></Link>
+                        <Link href="/o-shkole"><li className='py-3 hover:underline'>О школе</li></Link>
+                        <Link href="/prepodavatelskii-sostav"><li className='py-3 hover:underline'>Преподавательский состав</li></Link>
+                        <Link href="/online-obuchenie"><li className='py-3 hover:underline'>Онлайн обучение</li></Link>
                 </ul>
             </div>
         }
