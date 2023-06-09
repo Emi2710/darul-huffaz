@@ -3,43 +3,13 @@ import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs
 import Image from 'next/image';
 
 import Link from 'next/link';
-
-import {sanityClient, urlFor} from '../../../lib/sanity'
-
+import { images } from '../../../assets/constants'
 
 interface Props {}  
-
-interface Image {
-  _id: string;
-  image: {
-    asset: {
-      url: string;
-    };
-  };
-  alt: string;
-}
 
 
 
 const Gallery: React.FC<Props> = () => {
-
-  const [images, setImages] = useState<Image[]>([]);
-
-  useEffect(() => {
-    // Fetch the data from Sanity using a GROQ query
-    const fetchData = async () => {
-      try {
-        const query = '*[_type == "schoolGallery"]{images[]->{image{asset->{url}}, alt}}';
-        const result = await sanityClient.fetch(query);
-        setImages(result[0].images);
-      } catch (error) {
-        console.error('Error fetching data from Sanity:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
 
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -66,13 +36,16 @@ const Gallery: React.FC<Props> = () => {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {/*images.map((image, index) => (
+          {[images.img2, images.img3, images.img1, images.img4, images.img5, images.img6,
+            images.img7, images.img8, images.img9, images.img10, images.img11, images.img12,
+            images.img13, images.img14, images.img15, images.img16, images.img17, images.img18,
+            images.img19, images.img20 ].map((image, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
               
-              <Image src={image.image.asset.url} alt={image.alt} />
+              <Image src={image} alt="Darul Huffaz" />
               
             </div>
-          ))*/}
+          ))}
         </div>
         <div className="app__gallery-images_arrows">
           <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll('left')} />
