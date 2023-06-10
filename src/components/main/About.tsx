@@ -9,7 +9,7 @@ export default function About({}: Props) {
 
         <div className='p-5 md:max-w-md'>
             <h2 className='text-3xl py-5 lg:text-4xl'>Преподавательский состав</h2>
-            <p className='roboto text-sm opacity-80 py-5 leading-relaxed'>Преподавательский состав в школе отобран по высоким требованиям. С сестрами занимаются 4 учителя, так же являющиеся Хьафизами. Каждая из них ответственно и осознанно подходит к своей работе, ведь они обучают воспитанниц школы Книге Аллах1а.</p>
+            <p className='roboto text-sm opacity-80 py-5 leading-relaxed'>Преподавательский состав в школе отобран по высоким требованиям. С сестрами занимаются 4 учителя, так же являющиеся Хафизами. Каждая из них ответственно и осознанно подходит к своей работе, ведь они обучают воспитанниц школы Книге Аллах1а.</p>
             <Link href="/prepodavatelskii-sostav"><button className='pink-bg py-1 px-5 tracking-widest text-sm my-3'>Читать дальше</button></Link>
         </div>
 

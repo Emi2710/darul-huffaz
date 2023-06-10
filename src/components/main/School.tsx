@@ -18,7 +18,7 @@ export default function School({}: Props) {
             <li className='md: py-1'>Таджвид с нуля</li>
             <li className='md: py-1'>Индивидуальное расписание</li>
             <li className='md: py-1'>Онлайн обучение</li>
-            <li>выдача сертификатов</li>
+            <li className='md: py-1'>выдача сертификатов</li>
           </ul>
 
           <Link href="/#contact"><button className='pink-bg py-1 px-5 text-sm my-3 tracking-widest md:text-lg'>Контактная информация</button></Link>
