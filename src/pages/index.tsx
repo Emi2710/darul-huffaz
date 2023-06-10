@@ -14,6 +14,7 @@ import Contact from '@/components/main/Contact'
 import Navbar from '../../layout/Navbar'
 import Footer from '../../layout/Footer'
 import FAQComponent from '@/components/main/FAQComponent'
+import Feedback from '@/components/main/Feedback'
 
 interface Props {}
 
@@ -86,6 +87,7 @@ export default function Home({}: Props) {
       <Gallery />
       <Graduates />
       <Inspiration />
+      {/*<Feedback />*/}
       <Timetable />
       <Info />
 

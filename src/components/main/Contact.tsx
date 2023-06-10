@@ -12,11 +12,7 @@ export default function Contact({}: Props) {
         <h2 className='text-3xl py-5 md:text-4xl tracking-widest text-center'>контактная информация</h2>
       <div className='md:flex justify-center items-center'>
         <div className='tracking-widest'>
-          <ul className='list-disc pl-5 py-5 underline'>
-            <Link href="https://instagram.com/darul_huffaz95?igshid=YmMyMTA2M2Y="><li>Инстаграм школы</li></Link> 
-            <Link href="https://instagram.com/darulhuffaz_online?igshid=YmMyMTA2M2Y="><li>Инстаграм онлайн школы</li></Link> 
-            <Link href='https://t.me/darul_huffaz95'><li>Телеграм канал</li></Link> 
-          </ul>
+          
 
           <h4 className='text-lg mt-5'>Администраторы школы:</h4>
           <ul className='list-disc pl-5 pb-5 underline'>

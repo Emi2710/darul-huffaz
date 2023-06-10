@@ -36,8 +36,8 @@ export default function Footer({}: Props) {
                     <Link href="https://instagram.com/darul_huffaz95?igshid=YmMyMTA2M2Y="><li>Instagram школы</li></Link> 
                     <Link href="https://instagram.com/darulhuffaz_online?igshid=YmMyMTA2M2Y="><li>Instagram онлайн школы</li></Link> 
                     <Link href='https://t.me/darul_huffaz95'><li>Telegram</li></Link> 
-                    <Link href='#'><li>Youtube</li></Link> 
-                    <Link href='#'><li>TikTok</li></Link> 
+                    <Link href='https://www.youtube.com/@DarulHuffaz95'><li>Youtube</li></Link> 
+                    <Link href='http://tiktok.com/@darul_hufaz95'><li>TikTok</li></Link> 
                 </ul>
 
             </div>

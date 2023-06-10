@@ -173,7 +173,7 @@ hr {
 .app__gallery-images_card {
     position: relative;
     min-width: 301px;
-    height: 447px;
+    height: 100%;
     margin-right: 2rem;
 }
 

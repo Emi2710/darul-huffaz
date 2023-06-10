@@ -11,10 +11,9 @@ const Video: React.FC<Props> = () => {
     <div className="app__video">
       <video
         ref={vidRef}
-        src='./video/video.mp4'
+        src='./video/video1.mp4'
         loop
         controls={false}
-        muted
       />
       <div className="app__video-overlay flex__center">
         <div
