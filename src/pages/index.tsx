@@ -15,6 +15,7 @@ import Navbar from '../../layout/Navbar'
 import Footer from '../../layout/Footer'
 import FAQComponent from '@/components/main/FAQComponent'
 import Feedback from '@/components/main/Feedback'
+import Head from 'next/head'
 
 interface Props {}
 
@@ -77,6 +78,11 @@ const faqs = [
 export default function Home({}: Props) {
   return (
     <div>
+    <Head>
+          <title></title>
+          <meta name="description" content='' />
+          
+    </Head>   
     <Navbar />
       <Header />
       <About />

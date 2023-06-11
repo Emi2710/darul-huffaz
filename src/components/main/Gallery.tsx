@@ -36,7 +36,7 @@ const Gallery: React.FC<Props> = () => {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.img2, images.img3, images.img1, images.img4, images.img5, images.img6,
+          {[images.img2, images.img3, images.img1, images.img4, images.img5,
             images.img7, images.img8, images.img9, images.img10, images.img11, images.img12,
             images.img13, images.img14, images.img15, images.img16, images.img17, images.img18,
             images.img19, images.img20 ].map((image, index) => (
