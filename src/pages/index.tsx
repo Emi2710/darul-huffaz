@@ -79,8 +79,8 @@ export default function Home({}: Props) {
   return (
     <div>
     <Head>
-          <title></title>
-          <meta name="description" content='' />
+          <title>Школа Хафизов для девушек в Грозном «Даруль Хуффаз»</title>
+          <meta name="description" content='Школа Хафизов для девушек в Грозном «Даруль Хуффаз»' />
           
     </Head>   
     <Navbar />
