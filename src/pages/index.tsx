@@ -1,3 +1,6 @@
+import React, { useRef } from 'react';
+
+
 import Header from '@/components/main/Header'
 import About from '@/components/main/About'
 import School from '@/components/main/School'
@@ -14,10 +17,39 @@ import Contact from '@/components/main/Contact'
 import Navbar from '../../layout/Navbar'
 import Footer from '../../layout/Footer'
 import FAQComponent from '@/components/main/FAQComponent'
-import Feedback from '@/components/main/Feedback'
 import Head from 'next/head'
 
-interface Props {}
+import { sanityClient, urlFor } from '../../lib/sanity';
+import Image from 'next/image';
+
+import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+
+
+
+
+interface Props {
+    graduates: [Graduate];
+}
+
+type Graduate = {
+    _id : string;
+    name: string;
+    time: string;
+    date: string;
+    img: Image;
+    
+    
+}
+
+interface Image {
+  _type: "image";
+  asset: {
+    _ref: string;
+    _type: "reference";
+  };
+}
+
+
 
 const faqs = [
         {
@@ -75,7 +107,24 @@ const faqs = [
     ];
 
 
-export default function Home({}: Props) {
+export default function Home({graduates}: Props) {
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    const { current } = scrollRef;
+
+    if (direction === 'left') {
+      if (current) {
+        current.scrollLeft -= 300;
+      }
+    } else {
+      if (current) {
+        current.scrollLeft += 300;
+      }
+    }
+  };
+
   return (
     <div>
     <Head>
@@ -93,7 +142,36 @@ export default function Home({}: Props) {
       <Quote />
       <Video />
       <Gallery />
-      <Graduates />
+{/*<Graduates/>  */}
+      
+
+      <div className='' id='vypusknici'>
+
+      <h3 className='text-3xl pt-12 lg:py-12 lg:pt-24 md:text-4xl lg:text-5xl tracking-widest text-center'>Наши выпускницы </h3>
+        
+      
+      
+      <div className="app__gallery-images flex m-auto">
+        <div className="app__gallery-images_container" ref={scrollRef}>
+          {graduates.map((graduate, index) => (
+            <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
+              <img src={urlFor(graduate.img).url()} alt="gallery_image" />
+              <p className='p-3 absolute bottom-0 graduate-caption tracking-widest text-xs lg:text-sm'>{graduate.name} <br/>{graduate.time}<br/> {graduate.date}</p>
+            </div>
+          ))}
+        </div>
+        
+        <div className="app__gallery-images_arrows-graduate">
+          <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll('left')} />
+          <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />
+        </div>
+      </div>
+      <div>
+        <p className='text-center text-lg md:text-2xl lg:text-4xl lg:py-12 tracking-widest p-1'>За 5 лет работы, с дозволения Аллах1а, <br/>
+          наша школа выпустила более <span className='quote-span'>60 Хафизов</span></p>
+      </div>
+    </div>
+      
       <Inspiration />
       {/*<Feedback />*/}
       <Timetable />
@@ -107,4 +185,20 @@ export default function Home({}: Props) {
 
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const query = `*[_type == 'graduates']{
+    _id,
+    img,
+    name,
+    time,
+    date,
+    
+  }`
+
+  const graduates = await sanityClient.fetch(query)
+  return {
+    props: {graduates}, // will be passed to the page component as props
+  }
 }
