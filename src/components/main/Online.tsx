@@ -12,7 +12,7 @@ export default function Online({}: Props) {
       <div className='px-5 py-12 max-w-lg lg:ml-5'>
         <h2 className='text-3xl py-5 md:text-4xl tracking-widest text-center lg:text-left'>Онлайн Обучение</h2>
         
-        <p className='roboto opacity-70  leading-relaxed text-sm py-5'>
+        <p className='roboto opacity-70  leading-relaxed text-md py-5'>
           Каждая мусульманка желает стать хранительницей Священного Корана, чтобы посредством него приблизиться к Аллах1у и снискать Его довольства. Именно поэтому Школа Хафизов для сестёр «Даруль Хуффаз» открыла онлайн обучение чтению священного Корана.
         </p>
 
