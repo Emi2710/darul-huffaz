@@ -17,7 +17,7 @@ export default function Contact({}: Props) {
           <h4 className='text-lg mt-5'>Администраторы школы:</h4>
           <ul className='list-disc pl-5 pb-5 underline'>
             <Link href="http://wa.me/79280246433/"><li>Сумая Whatsapp</li></Link> 
-            <Link href="http://wa.me/79289536146"><li>Хава Whatsapp</li></Link>
+            <Link href="http://wa.me/79389943335"><li>Хава Whatsapp</li></Link>
           </ul>
 
           <h4 className='text-lg mt-5'>Администратор онлайн школы:</h4>
