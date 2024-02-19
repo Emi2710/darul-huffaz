@@ -22,7 +22,7 @@ export default function Contact({}: Props) {
 
           <h4 className='text-lg mt-5'>Администратор онлайн школы:</h4>
           <ul className='list-disc pl-5 pb-5 underline'>
-            <Link href="https://wa.me/+79280226626"><li>Саада Whatsapp</li></Link>
+            <Link href="https://wa.me/+79389923335"><li>Саада Whatsapp</li></Link>
           </ul>
 
           <h4 className='text-lg mt-5'>Наш Адрес:</h4>
